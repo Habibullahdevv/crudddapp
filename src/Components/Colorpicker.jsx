@@ -1,35 +1,26 @@
-import { useState } from "react"
+import { useState } from "react";
 
-function Colorpicker(){
+function Colorpicker() {
+    const [color, setColor] = useState("#FFFF");
 
-const [color,setcolor] = useState("#FFFF")
+    function handleColorChange(event) {
+        setColor(event.target.value);
+    }
 
- function Handlecolor(event){
+    return (
+        <>
+            <div className="color-picker-container">
+                <hr />
+                <h1>Color Picker</h1>
+                <div className="color-display" style={{ backgroundColor: color }}>
+                    <p>Select a color: {color}</p>
+                </div>
 
-setcolor(event.target.value)
-
-}  
-
-
-return(
-
-<>
-<div>
-
-<h1>
-Color Picker
-</h1>
-<div style={{backgroundColor:color}}>
-<p>Select a color{color}</p>
-</div>
-
-<label >Select a color</label>
-<input type="color" value={color} onChange={Handlecolor}/>
-</div>
-
-</>
-    )
-
+                <label>Select a color</label>
+                <input type="color" value={color} onChange={handleColorChange} />
+            </div>
+        </>
+    );
 }
 
-export default Colorpicker
+export default Colorpicker;

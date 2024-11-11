@@ -64,11 +64,11 @@
     color: #333;
   }
   
-  button {
+ .to-do-list button {
     padding: 6px;
     margin-left: 5px;
     font-size: 14px;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -89,4 +89,374 @@
   .Up-button:hover, .Dowm-button:hover {
     background-color: #2980b9;
   }
-  
+  /* General wrapper styling */
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Accordion container styling */
+.accordian {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual item styling */
+.item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+/* Title styling */
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+/* Icon styling */
+.title span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.title:hover span {
+  color: #007bff;
+}
+
+/* Answer content styling */
+.title div {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* Item hover effect */
+.item:hover {
+  background-color: #f1f1f1;
+}
+/* Main container styling */
+.color-picker-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styling */
+.color-picker-container h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Color display box styling */
+.color-display {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Paragraph styling inside color display */
+.color-display p {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Label styling */
+.color-picker-container label {
+  display: block;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Input (color picker) styling */
+.color-picker-container input[type="color"] {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-picker-container input[type="color"]:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Main container styling */
+.car-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.car-title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Subtitle styling */
+.car-subtitle {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Car list styling */
+.car-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 20px 0;
+}
+
+.car-item {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.car-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Input group styling */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Input field styling */
+.input-year, .input-make, .input-model {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Button styling */
+.add-car-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-car-button:hover {
+  background-color: #0056b3;
+}
+/* Title styling */
+.counter-title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin: 20px 0;
+}
+
+/* Display styling */
+.counter-display {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+  color: #007bff;
+}
+
+/* Button container styling */
+.counter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Button styling */
+.increment-button, .decrement-button, .reset-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.increment-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.increment-button:hover {
+  background-color: #218838;
+}
+
+.decrement-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.decrement-button:hover {
+  background-color: #c82333;
+}
+
+.reset-button {
+  background-color: #6c757d;
+  color: white;
+}
+
+.reset-button:hover {
+  background-color: #5a6268;
+}
+/* Title styling */
+.object-update-title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Car details styling */
+.object-info {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.car-details {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Input field styling */
+.input-year, .input-name, .input-from {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+.input-year:focus, .input-name:focus, .input-from:focus {
+  border-color: #007bff;
+}
+/* Main container styling */
+.onchange-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.live-update-title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Section title styling */
+.input-title {
+  font-size: 18px;
+  color: #555;
+  margin-top: 15px;
+}
+
+/* Input field styling */
+.input-name, .input-quantity, .input-comment {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.input-name:focus, .input-quantity:focus, .input-comment:focus {
+  border-color: #007bff;
+}
+
+/* Output display styling */
+.output-display {
+  font-size: 16px;
+  color: #333;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* Delivery options styling */
+.delivery-options {
+  margin-top: 15px;
+}
+
+.delivery-option {
+  font-size: 16px;
+  color: #333;
+}
+
+.delivery-option input {
+  margin-right: 5px;
+}
