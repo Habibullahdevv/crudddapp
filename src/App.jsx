@@ -9,6 +9,7 @@ import OnChange from './Components/Onchange'
 import Student from './Components/Props'
 import Accordian from './Components/Accordian'
 import Qrcodegenerator from './Components/Qrcodegenerator'
+import StartRating from './Components/Star-ratings/Star-rating'
 function App() {
 
   return (
@@ -25,6 +26,7 @@ function App() {
     <Accordian/>
 
     <Qrcodegenerator/>
+    <StartRating/>
     </>
   )
 }

@@ -8,7 +8,7 @@ function Colorpicker() {
     }
 
     return (
-        <>
+        <> <hr />
             <div className="color-picker-container">
                 <hr />
                 <h1>Color Picker</h1>

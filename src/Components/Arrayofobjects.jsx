@@ -30,7 +30,7 @@ function Arrayofobjects() {
         setCars((prevCars) => prevCars.filter((_, i) => i !== index));
     }
 
-    return (
+    return (<> <hr />
         <div className="car-container">
             <hr />
             <h1 className="car-title">Array of Car Objects</h1>
@@ -74,7 +74,7 @@ function Arrayofobjects() {
                     Add Car
                 </button>
             </div>
-        </div>
+        </div></> 
     );
 }
 

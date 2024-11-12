@@ -1,0 +1,32 @@
+/* Main container styling */
+.star-rating-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* Default star icon styling */
+.star-icon {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Active star styling (filled) */
+.star-active {
+    color: #ffd700; /* Gold color */
+}
+
+/* Inactive star styling (empty) */
+.star-inactive {
+    color: #ccc; /* Light grey color */
+}
+
+/* Hover effect for stars */
+.star-icon:hover {
+    transform: scale(1.1);
+}
+.Starheading{
+text-align: center;
+
+}

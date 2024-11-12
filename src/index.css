@@ -103,7 +103,10 @@
   overflow: hidden;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+.Accordianheading {
+  text-align: center;
+color: rgb(0, 0, 0);
+}
 /* Individual item styling */
 .item {
   border-bottom: 1px solid #ddd;
@@ -459,4 +462,58 @@
 
 .delivery-option input {
   margin-right: 5px;
+}
+/* Main container styling */
+#qr-generator-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Title styling */
+.qr-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input and button container styling */
+.qr-input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.qr-input {
+  padding: 10px;
+  width: 250px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.qr-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.qr-button:hover {
+  background-color: #45a049;
+}
+
+/* QR code display box */
+#qr-code-box {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
 }

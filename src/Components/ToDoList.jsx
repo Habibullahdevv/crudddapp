@@ -52,7 +52,7 @@ function HandleDown(index){
 
 
     return(<>
-    
+    <hr />
 <div className="to-do-list">
 
 <h1>To Do List</h1>

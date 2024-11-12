@@ -12,13 +12,13 @@ export default function Accordian() {
     }
     
     return (<>
-
+<hr />
         <div>
 
-            <h1>--Accordians</h1>
 
 
             <div className="wrapper">
+            <h1 className="Accordianheading">--Accordians</h1>
                 <div className="accordian">
                     {
 

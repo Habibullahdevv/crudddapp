@@ -22,9 +22,9 @@ function OnChange() {
         setDelivery(event.target.value);
     }
 
-    return (
+    return (<>
+        <hr />
         <div className="onchange-container">
-            <hr />
             <h1 className="live-update-title">Live Update</h1>
 
             <div className="input-section">
@@ -79,7 +79,7 @@ function OnChange() {
                     <h3 className="output-display">Shipping: {delivery}</h3>
                 </div>
             </div>
-        </div>
+        </div></>
     );
 }
 
