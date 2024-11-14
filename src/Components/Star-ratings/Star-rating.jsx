@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FaStar } from 'react-icons/fa';
-import './style.css';
+import './style.css'
 
 export default function StarRating({ noOFstars = 5 }) {
     const [rating, setRating] = useState(0);

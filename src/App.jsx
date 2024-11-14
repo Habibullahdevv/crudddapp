@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import ToDolist from './Components/ToDoList'
 import Colorpicker from './Components/Colorpicker'
 import Arrayofobjects from './Components/Arrayofobjects'
@@ -10,23 +10,55 @@ import Student from './Components/Props'
 import Accordian from './Components/Accordian'
 import Qrcodegenerator from './Components/Qrcodegenerator'
 import StartRating from './Components/Star-ratings/Star-rating'
+import LoadMoreData from './Components/Load-more-data'
 function App() {
 
+  const [scroll, setscroll] = useState(0);
+  function handleScroll() {
+    console.log(document.body.scrollTop,
+      document.documentElement.scrollTop,
+      document.documentElement.scrollHeight,
+      document.documentElement.clientHeight
+    );
+
+    const howmuchscrolled =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    const
+      height =
+        document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+    setscroll((howmuchscrolled / height) * 100)
+
+console.log(setscroll)
+  }
+
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+
+    return () => { window.removeEventListener('scroll', () => { }) }
+
+  }, [])
   return (
     <>
-<ToDolist/>
-<Colorpicker/>
- <Arrayofobjects/>
- <Counter/>
+    <div className='coverscrollbar'>
+    <div className='progresstracking' style={{width : `${scroll}%`}}>
+    </div>
+    </div>
+      <ToDolist />
+      <Colorpicker />
+      <Arrayofobjects />
+      <Counter />
 
-    <UpdaterObject/>
-    <OnChange/>
-    
-    
-    <Accordian/>
+      <UpdaterObject />
+      <OnChange />
 
-    <Qrcodegenerator/>
-    <StartRating/>
+
+      <Accordian />
+
+      <Qrcodegenerator />
+      <StartRating />
+      <LoadMoreData />
     </>
   )
 }

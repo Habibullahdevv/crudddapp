@@ -1,32 +1,47 @@
-/* Main container styling */
+/* Star Rating Container */
 .star-rating-container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 8px;
+    margin-top: 20px;
 }
 
-/* Default star icon styling */
+/* Star heading */
+.Starheading {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+/* Active and inactive star styling */
 .star-icon {
     cursor: pointer;
     transition: color 0.3s ease;
 }
 
-/* Active star styling (filled) */
 .star-active {
-    color: #ffd700; /* Gold color */
+    color: #ffc107; /* Gold for active stars */
 }
 
-/* Inactive star styling (empty) */
 .star-inactive {
-    color: #ccc; /* Light grey color */
+    color: #ddd; /* Light grey for inactive stars */
 }
 
-/* Hover effect for stars */
-.star-icon:hover {
-    transform: scale(1.1);
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .Starheading {
+        font-size: 20px;
+    }
+    .star-icon {
+        size: 30px;
+    }
 }
-.Starheading{
-text-align: center;
 
+@media (max-width: 480px) {
+    .Starheading {
+        font-size: 18px;
+    }
+    .star-icon {
+        size: 25px;
+    }
 }
