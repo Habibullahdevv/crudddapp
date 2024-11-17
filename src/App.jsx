@@ -11,6 +11,7 @@ import Accordian from './Components/Accordian'
 import Qrcodegenerator from './Components/Qrcodegenerator'
 import StartRating from './Components/Star-ratings/Star-rating'
 import LoadMoreData from './Components/Load-more-data'
+import GithubProfileFinder from './Components/Git-hub-profile-finder'
 function App() {
 
   const [scroll, setscroll] = useState(0);
@@ -59,6 +60,7 @@ console.log(setscroll)
       <Qrcodegenerator />
       <StartRating />
       <LoadMoreData />
+      <GithubProfileFinder/>
     </>
   )
 }

@@ -1,3 +1,8 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: 0px;
+}
 .to-do-list {
     max-width: 400px;
     margin: 50px auto;
