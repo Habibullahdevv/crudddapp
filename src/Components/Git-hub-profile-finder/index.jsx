@@ -33,8 +33,11 @@ export default function GithubProfileFinder() {
 
     return (
         <>
+        <hr />
             <div className="git-container" style={{ padding: 20 }}>
                 <div className="gitinput-wrapper">
+                <h1>((( GIT HUB PROFILE FINDER )))</h1>
+
                     <input
                         name="search-by-username"
                         type="text"
