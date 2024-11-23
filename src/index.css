@@ -596,7 +596,9 @@ width: 0%;
 .section-qrcode,
 .section-star-rating,
 .section-load-more-data, /* New Section */
-.section-github-profile {
+.section-github-profile,
+.section-github-weather
+ {
   margin-left: 220px; /* Adjust based on sidebar width */
   padding: 20px;
   border: 1px solid #ddd;
@@ -618,7 +620,8 @@ width: 0%;
 .section-qrcode:hover,
 .section-star-rating:hover,
 .section-load-more-data:hover, /* New Section */
-.section-github-profile:hover {
+.section-github-profile:hover,
+.section-github-weather:hover {
   transform: scale(1.01);
 }
 
@@ -642,7 +645,8 @@ width: 0%;
   .section-qrcode,
   .section-star-rating,
   .section-load-more-data,
-  .section-github-profile {
+  .section-github-profile
+  .section-github-weather {
     margin-left: 120px;
   }
 }
@@ -670,7 +674,8 @@ width: 0%;
   .section-qrcode,
   .section-star-rating,
   .section-load-more-data,
-  .section-github-profile {
+  .section-github-profile
+  .section-github-weather {
     margin-left: 0;
   }
 }

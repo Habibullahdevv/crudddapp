@@ -8,6 +8,7 @@ import Qrcodegenerator from "./Components/Qrcodegenerator";
 import StartRating from "./Components/Star-ratings/Star-rating";
 import LoadMoreData from "./Components/Load-more-data";
 import GithubProfileFinder from "./Components/Git-hub-profile-finder";
+import Weather from "./Components/Weather/Application";
 
 export default function App() {
   const [scroll, setScroll] = useState(0);
@@ -22,6 +23,7 @@ export default function App() {
   const startRatingRef = useRef();
   const loadMoreDataRef = useRef(); // Added for Load More Data section
   const githubProfileRef = useRef();
+  const githubweather = useRef();
 
   // Scroll Progress Tracker
   function handleScroll() {
@@ -105,6 +107,12 @@ export default function App() {
         >
           GitHub Finder
         </button>
+        <button
+          className="btn-github-weather"
+          onClick={() => scrollToSection(githubweather)}
+        >
+          Weather API
+        </button>
       </div>
 
       {/* Scroll Progress Bar */}
@@ -113,33 +121,39 @@ export default function App() {
       </div>
 
       {/* Sections */}
-      <div ref={toDoListRef} className="section-todolist">
+     
+      <div ref={toDoListRef} className="section-colorpicker">
         <ToDolist />
-      </div>
+       </div>
       <div ref={colorPickerRef} className="section-colorpicker">
         <Colorpicker />
-      </div>
+       </div>
       <div ref={arrayOfObjectsRef} className="section-arrayofobjects">
         <Arrayofobjects />
-      </div>
+       </div>
       <div ref={counterRef} className="section-counter">
         <Counter />
-      </div>
+       </div>
       <div ref={accordianRef} className="section-accordian">
         <Accordian />
-      </div>
+       </div>
       <div ref={qrCodeRef} className="section-qrcode">
         <Qrcodegenerator />
-      </div>
+       </div>
       <div ref={startRatingRef} className="section-star-rating">
         <StartRating />
-      </div>
+       </div>
       <div ref={loadMoreDataRef} className="section-load-more-data">
         <LoadMoreData />
-      </div>
+       </div>
       <div ref={githubProfileRef} className="section-github-profile">
         <GithubProfileFinder />
-      </div>
+       </div>
+      <div ref={githubweather} className="section-github-weather">
+      <Weather/>
+       </div>
+
+
     </>
   );
 }

@@ -1,0 +1,126 @@
+/* General container styling */
+div {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.weather-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.city-name h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.city-name span {
+    font-size: 18px;
+    color: #555;
+}
+
+.date {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.weatherinfo {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.weatherinfo div {
+    text-align: center;
+}
+
+.weatherinfo .wind,
+.weatherinfo .humidity {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.weatherinfo p {
+    font-size: 14px;
+    color: #666;
+}
+
+.description {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #444;
+}
+
+.loading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.temperature {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #FF5722;
+}
+/* Styling for the search engine container */
+.search-engine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 500px;
+    gap: 10px;
+}
+
+/* Input field styling */
+.city-search {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.city-search:focus {
+    border-color: #007BFF;
+}
+
+/* Button styling */
+.search-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+.search-btn:active {
+    background-color: #00448a;
+}
+
+.search-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
